@@ -1,0 +1,60 @@
+@import '~@/styles/var.less';
+
+.postPreview {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+
+  a:hover {
+    .title {
+      color: @linkHoverColor;
+    }
+  }
+
+  .title {
+    margin-bottom: 10px;
+    color: @black;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .summary {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+    .ellipsis(4);
+
+    &:hover {
+      color: @linkHoverColor;
+    }
+  }
+
+  .meta {
+    color: gray;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+  }
+}
+
+.postList {
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .nextLink {
+    float: right;
+    margin-top: 20px;
+    padding: 15px 25px;
+    color: #404040;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-color: @linkHoverColor;
+      color: #fff;
+    }
+  }
+}
