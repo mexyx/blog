@@ -6,7 +6,7 @@ import styles from './style.less';
 const PostPreview = () => {
   return (
     <div className={styles.postPreview}>
-      <Link to="/">
+      <Link to="/post/1">
         <div className={styles.title}>Android 操作系统架构开篇</div>
         <div className={styles.summary}>
           基于Android

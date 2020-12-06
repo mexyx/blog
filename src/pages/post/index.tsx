@@ -6,8 +6,8 @@ import PostList from '@/components/post-list';
 
 const Home = () => (
   <>
-    <PageHeader title="HOME" signature="There is Homepage" />
-    <MainContainer main={<PostList />} aside={<h1>TODO</h1>} />
+    <PageHeader title="POST" signature="There is POST" />
+    <MainContainer main={<PostList />} aside={<h1>POST</h1>} />
   </>
 );
 

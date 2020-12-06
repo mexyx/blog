@@ -9,7 +9,11 @@ export default defineConfig({
   base: isDev ? '/' : '/blog',
   publicPath: isDev ? '/' : '/blog/',
   ssr: {},
-  exportStatic: {},
+  exportStatic: {
+    extraRoutePaths: async () => {
+      return Promise.resolve(['/post/1', '/post/2']);
+    },
+  },
   theme,
   nodeModulesTransform: {
     type: 'none',
